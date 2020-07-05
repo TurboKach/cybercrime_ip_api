@@ -1,5 +1,5 @@
 # install FireHOL dependencies
-apt-get install -f autoconf autogen automake curl gcc git ipset kmod make pkg-config procps traceroute zlib1g-dev
+apt-get install -f -y autoconf autogen automake curl gcc git ipset kmod make pkg-config procps traceroute zlib1g-dev
 
 # cd somewhere
 cd /tmp
@@ -20,7 +20,7 @@ cd iprange.git
 make
 # make sure it completed successfully
 
-sudo make install
+make install
 # make sure it completed successfully
 
 # install firehol
@@ -35,7 +35,7 @@ cd ../firehol.git
 make
 # make sure it completed successfully
 
-sudo make install
+make install
 # make sure it completed successfully
 
 # Create the default RUN_PARENT_DIR='/usr/var/run' who is set in '/etc/firehol/update-ipsets.conf'
