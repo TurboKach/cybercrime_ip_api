@@ -1,5 +1,5 @@
 # cybercrime_ip_api
-1. `docker build ubuntu:18.04`
+1. `docker build --tag ubuntu:18.04`
 2. `docker run --publish 8000:8080 --detach --name cc_ip_api ubuntu:18.04`
 2. Запросы к API:
 
